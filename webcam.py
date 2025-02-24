@@ -11,7 +11,7 @@ class VideoWidget(QtWidgets.QLabel):
         self.timer.timeout.connect(self.nextFrame)
         self.timer.start(30)  # 30 FPS
         self.mouse_x, self.mouse_y = 0, 0
-        self.button_radius = 20  # button radius
+        self.button_radius = 20  # Button Radius
         self.button_x = 0
         self.button_y = 0
         self.image_counter = 0

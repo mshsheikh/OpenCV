@@ -27,7 +27,7 @@ class VideoWidget(QtWidgets.QLabel):
         self.button_x = width - 50
         self.button_y = height - 50
 
-        # Draw button
+        # Draw Button
         cv2.circle(frame, (self.button_x, self.button_y), self.button_radius + 5, (255, 255, 255), -1)
         # Using widget coordinates (if your QLabel size differs from the frame, adjust for scaling)
         dist_sq = (self.mouse_x - self.button_x) ** 2 + (self.mouse_y - self.button_y) ** 2

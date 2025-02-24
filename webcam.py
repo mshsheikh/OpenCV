@@ -38,7 +38,7 @@ class VideoWidget(QtWidgets.QLabel):
             cv2.putText(frame, "CLICK", (self.button_x - 30, self.button_y - 30), 
                         cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2)
 
-        # Convert frame to QImage and display
+        # Convert Frame to QImage and display
         rgb_image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         h, w, ch = rgb_image.shape
         bytes_per_line = ch * w

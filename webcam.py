@@ -76,7 +76,7 @@ def main():
         print("Unable to open camera!")
         return
     video_widget = VideoWidget(capture)
-    video_widget.setMouseTracking(True)  # Mouse tracking
+    video_widget.setMouseTracking(True)  # Mouse Tracking
     video_widget.resize(640, 480)
     video_widget.show()
     sys.exit(app.exec_())

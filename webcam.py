@@ -29,7 +29,7 @@ class VideoWidget(QtWidgets.QLabel):
 
         # Draw Button
         cv2.circle(frame, (self.button_x, self.button_y), self.button_radius + 5, (255, 255, 255), -1)
-        # Using widget coordinates (if your QLabel size differs from the frame, adjust for scaling)
+        # Using widget coordinates (if your QLabel size differs from the frame)
         dist_sq = (self.mouse_x - self.button_x) ** 2 + (self.mouse_y - self.button_y) ** 2
         is_hovering = dist_sq <= self.button_radius**2
         button_color = (0, 255, 0) if is_hovering else (0, 0, 255)
